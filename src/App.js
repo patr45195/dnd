@@ -2,6 +2,8 @@ import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./App.css";
 import { generateRandomShoppingListName } from "./utils/generateRandomListName";
+import DeleteIcon from "@mui/icons-material/Delete";
+import AddIcon from "@mui/icons-material/Add";
 
 const DATA = [
   {
@@ -112,7 +114,7 @@ function App() {
       <div className="card">
         <DragDropContext onDragEnd={handleDragAndDrop}>
           <div>
-            <h1>Shopping List</h1>
+            <h1>Рецепты</h1>
           </div>
           <Droppable droppableId="ROOT" type="group">
             {(provided) => (
@@ -140,7 +142,7 @@ function App() {
           </Droppable>
         </DragDropContext>
       </div>
-      <button onClick={addList}>Add List</button>
+      <AddIcon onClick={addList} />
     </div>
   );
 }
@@ -156,7 +158,7 @@ function StoreList({ name, items, id, removeList }) {
         >
           <div className="store-container">
             <h3>{name}</h3>
-            <button onClick={() => removeList(id)}>delete</button>
+            <DeleteIcon onClick={() => removeList(id)} />
           </div>
           <div className="items-container">
             {items.map((item, index) => (
