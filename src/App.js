@@ -35,8 +35,17 @@ const DATA = [
   },
 ];
 
+const MOCK_DATA = [
+  { id: "item7", name: "Сыр" },
+  { id: "item8", name: "Колбаса" },
+  { id: "item9", name: "Соль" },
+  { id: "item10", name: "Сахар" },
+  { id: "item11", name: "Лимон" },
+];
+
 function App() {
   const [stores, setStores] = useState(DATA);
+  const [mockData, setMockData] = useState(MOCK_DATA);
 
   const addList = () => {
     setStores((prevState) => [
