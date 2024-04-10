@@ -6,29 +6,29 @@ import { generateRandomShoppingListName } from "./utils/generateRandomListName";
 const DATA = [
   {
     id: "list1",
-    name: "Walmart",
+    name: "Бутерброд",
     items: [
-      { id: "item1", name: "3% Milk" },
-      { id: "item2", name: "Butter" },
+      { id: "item1", name: "3% Молоко" },
+      { id: "item2", name: "Хлеб" },
     ],
   },
   {
     id: "list2",
-    name: "Indigo",
+    name: "Салат",
     items: [
       {
         id: "item3",
-        name: "Designing Data Intensive Applications",
+        name: "Помидоры",
       },
-      { id: "item4", name: "Atomic Habits" },
+      { id: "item4", name: "Огурцы" },
     ],
   },
   {
     id: "list3",
-    name: "Lowes",
+    name: "Хлеб",
     items: [
-      { id: "item5", name: "Workbench" },
-      { id: "item6", name: "Hammer" },
+      { id: "item5", name: "Мука" },
+      { id: "item6", name: "Вода" },
     ],
   },
 ];
